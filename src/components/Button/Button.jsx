@@ -7,9 +7,12 @@ function isOpeartor(val) {
 
 function Button(props) {
   return (
-    <div className={`btn ${isOpeartor(props.children) ? null : "operator"}`}>
+    <button
+      className={`btn ${isOpeartor(props.children) ? null : "operator"}`}
+      onClick={() => props.onClick(props.children)}
+    >
       {props.children}
-    </div>
+    </button>
   );
 }
 
