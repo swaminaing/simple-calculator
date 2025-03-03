@@ -1,0 +1,26 @@
+.btn{
+    width: 70px;
+    height: 70px;
+    color: white;
+    background-color: gray;
+    cursor: pointer;
+
+    display: grid;
+    place-items: center;
+    line-height: 70px;
+
+    outline: 1px solid white;
+}
+
+.btn.clearBtn{
+    width: 280px;
+}
+
+.btn.operator{
+    color: black;
+    background-color: orange;
+}
+
+.btn:hover{
+    background-color: rgb(110, 110, 110);
+}

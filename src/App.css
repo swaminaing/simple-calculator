@@ -1,0 +1,30 @@
+:root{
+    --background-color: black;
+    --operator-color: orange;
+    --number-color: gray;
+}
+
+body{
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main{
+    width: 300px;
+    border: 1px solid var(--number-color);
+    height: auto;
+    background-color: var(--background-color);
+
+    padding-bottom: 10px;
+}
+
+main .row{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}

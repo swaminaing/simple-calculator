@@ -1,0 +1,15 @@
+.form-control{
+    width: 280px;
+    height: 50px;
+    color: white;
+    background-color: transparent;
+
+    border: 0;
+    display: flex;
+    flex-direction: right;
+    margin-bottom: 5px;
+}
+
+.form-control:focus{
+    outline: 0;
+}
