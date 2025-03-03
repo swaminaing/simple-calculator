@@ -3,6 +3,7 @@ import "./App.css";
 import Button from "./components/Button/Button";
 import ClearButton from "./components/Button/ClearButton";
 import Input from "./components/Input/Input";
+import { evaluate } from "mathjs";
 
 function App() {
   const [value, setValue] = useState("");
@@ -13,7 +14,10 @@ function App() {
     });
   }
 
-  function handleEnter() {}
+  function handleEnter() {
+    const answer = evaluate(value);
+    setValue(answer);
+  }
 
   return (
     <main>
@@ -30,7 +34,7 @@ function App() {
         <Button onClick={handleClick}>4</Button>
         <Button onClick={handleClick}>5</Button>
         <Button onClick={handleClick}>6</Button>
-        <Button onClick={handleClick}>x</Button>
+        <Button onClick={handleClick}>*</Button>
       </div>
       <div className="row">
         <Button onClick={handleClick}>1</Button>
@@ -41,7 +45,7 @@ function App() {
       <div className="row">
         <Button onClick={handleClick}>.</Button>
         <Button onClick={handleClick}>0</Button>
-        <Button onClick={handleClick}>=</Button>
+        <Button onClick={handleEnter}>=</Button>
         <Button onClick={handleClick}>-</Button>
       </div>
       <div className="row">
