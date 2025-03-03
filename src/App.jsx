@@ -18,7 +18,7 @@ function App() {
   return (
     <main>
       <div className="row">
-        <Input value={value} />
+        <Input>{value}</Input>
       </div>
       <div className="row">
         <Button onClick={handleClick}>7</Button>
@@ -45,7 +45,7 @@ function App() {
         <Button onClick={handleClick}>-</Button>
       </div>
       <div className="row">
-        <ClearButton>Clear</ClearButton>
+        <ClearButton onClick={() => setValue("")}>Clear</ClearButton>
       </div>
     </main>
   );

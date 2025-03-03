@@ -2,7 +2,7 @@ import React from "react";
 import "./Input.css";
 
 function Input(props) {
-  return <input value={props.value} className="form-control" type="text" />;
+  return <div className="form-control">{props.children}</div>;
 }
 
 export default Input;

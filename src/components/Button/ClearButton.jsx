@@ -2,7 +2,11 @@ import React from "react";
 import "./Button.css";
 
 function ClearButton(props) {
-  return <div className="btn clearBtn">{props.children}</div>;
+  return (
+    <button className="btn clearBtn" onClick={props.onClick}>
+      {props.children}
+    </button>
+  );
 }
 
 export default ClearButton;
